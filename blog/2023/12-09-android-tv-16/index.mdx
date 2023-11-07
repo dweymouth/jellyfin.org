@@ -1,0 +1,88 @@
+---
+title: Android TV version 0.16
+authors:
+  - nielsvanvelzen
+slug: androidtv-v0.16.0
+tags: [release, android-tv]
+---
+
+It has been a busy year with a lot of work on the Android TV app. After an extended beta period today is finally the day to share this work to the public. Read along to learn everything about improved music playback, the new screensaver and more!
+
+\- Niels
+
+{/* truncate */}
+
+## Music playback
+
+- completely rewritten playback code
+- easier to maintain and to add features (like syncplay, lyric support, gappless playback and more)
+- media session support
+- less transcoding/remuxing (better codec detection)
+- will also come to video playback in the next big release
+- better remote control
+
+## Screensaver
+
+- improved design
+- added music playback
+- in-app version (enabled by default)
+- now works in video player! (note: not when using experimental "libvlc" implementation)
+
+## Search
+
+The search screen was partially rewritten to improve the performance. It will now cancel any pending search requests while typing and use
+a different method for getting the results. With these changes a search on large servers will be noticably faster and no flickering occurs
+anymore.
+
+## Full release notes
+
+The complete list of changes for this release with all merged pull requests can be found on [GitHub](https://github.com/jellyfin/jellyfin-androidtv/releases/tag/v0.16.0).
+
+## Contributors
+
+Jellyfin is developed by volunteer contributors, and we couldn't do without their great skills and dedication. They don't get paid by any organizations, so consider donating if you appreciate their work. A big shout-out to all contributors that made this release possible:
+
+**Jellyfin Team**
+
+- [@nielsvanvelzen](https://github.com/nielsvanvelzen) - Sponsor via [GitHub sponsors](https://github.com/sponsors/nielsvanvelzen)
+- [@thornbill](https://github.com/thornbill) - Sponsor via [GitHub sponsors](https://github.com/sponsors/thornbill)
+- [@1337joe](https://github.com/1337joe) - Sponsor via [GitHub sponsors](https://github.com/sponsors/1337joe)
+
+**Other contributors**
+
+- [@DoggoOfSpeed](https://github.com/DoggoOfSpeed)
+- [@DavidFair](https://github.com/DavidFair)
+- [@Clubfan22](https://github.com/Clubfan22)
+- [@MWisBest](https://github.com/MWisBest)
+- [@teobaranga](https://github.com/teobaranga)
+- [@tim\-vk](https://github.com/tim\-vk)
+- [@OctoNezd](https://github.com/OctoNezd)
+- [@polson](https://github.com/polson)
+- [@mohd\-akram](https://github.com/mohd\-akram)
+- [@horizon1250](https://github.com/horizon1250)
+- [@reacocard](https://github.com/reacocard)
+
+We'd also like to thank everyone who reported bugs, provided feedback and participated in beta testing!
+
+If you have some experience with Android TV development and are interested in contributing yourself,
+feel free to dive into the source code [on GitHub](https://github.com/jellyfin/jellyfin-androidtv) and open pull requests.
+
+Alternatively, you can help with translating the app into your language on our [Weblate](https://translate.jellyfin.org/engage/jellyfin-android/).
+
+## Downloads
+
+<a className='margin-right--md' href='https://play.google.com/store/apps/details?id=org.jellyfin.androidtv'>
+  <img width='153' alt='Jellyfin for Android TV on Google Play' src='/images/store-icons/google-play.png' />
+</a>
+
+<a className='margin-right--md' href='https://www.amazon.com/gp/product/B07TX7Z725'>
+  <img width='153' alt='Jellyfin for Fire TV at Amazon App Store' src='/images/store-icons/amazon.png' />
+</a>
+
+<a href='https://f-droid.org/en/packages/org.jellyfin.androidtv/'>
+  <img width='153' alt='Jellyfin for Android TV on F-Droid' src='/images/store-icons/fdroid.png' />
+</a>
+
+Direct downloads are available for sideloading at [repo.jellyfin.org](https://repo.jellyfin.org/releases/client/androidtv/)
+or in the [GitHub release assets](https://github.com/jellyfin/jellyfin-androidtv/releases/tag/v0.16.0).
+You can also join our [beta program on Google Play](https://play.google.com/apps/testing/org.jellyfin.androidtv) and help test new versions before they're released to the public.
